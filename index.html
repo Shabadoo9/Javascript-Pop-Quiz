@@ -9,32 +9,20 @@
 </head>
 
 <body>
-    <!-- High Scores -->
-    <section class="container" id="highScores">
-        <button popovertarget="popover" id="popBtn">View High Scores</button>
-        <table popover id="popover">
+<!-- High Scores -->
+<section class="container" id="highScores">
+    <button popovertarget="popover" id="popBtn">View High Scores</button>
+    <table popover id="popover">
+        <thead>
             <tr>
                 <th></th>
-                <th>Initals</th>
-                <th>Time Remaining (s)</th>
+                <th>Initials</th>
+                <th>Score</th>
             </tr>
-            <tr>
-                <td id="firstPlace">FIRST PLACE</td>
-                <td id="firstInitial"></td>
-                <td id="firstScore"></td>
-            </tr>
-            <tr>
-                <td id="secondPlace">SECOND PLACE</td>
-                <td id="secondInitial"></td>
-                <td id="secondScore"></td>
-            </tr>
-            <tr>
-                <td id="thirdPlace">THIRD PLACE</td>
-                <td id="thirdInitial"></td>
-                <td id="thirdScore"></td>
-            </tr>
-        </table>
-    </section>
+        </thead>
+        <tbody id="scoresTableBody"></tbody> <!-- This line is important -->
+    </table>
+</section>
 
     <!-- Start Quiz -->
     <section class="start">
@@ -63,8 +51,11 @@
         <div id="question"></div>
         <div id="choices">
             <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+            <br>
             <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+            <br>
             <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+            <br>
             <button class="choice" id="D" onclick="checkAnswer('D')"></button>
         </div>
         <div id="check"></div>
@@ -72,7 +63,7 @@
             <div id="counter"></div>
         </div>
     </section>
-    <script src="./assets/script.js"></script>
+    <script src="./assets/index.js"></script>
 </body>
 
 </html>
