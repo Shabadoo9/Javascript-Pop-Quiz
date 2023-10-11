@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <title>Javascript Pop Quiz</title>
     <link rel="stylesheet" href="./assets/style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="UTF-8">
 </head>
+
 <body>
-    
+    <!-- High Scores -->
+    <section class="container" id="highScores">
+        <button popovertarget="popover" id="popBtn">View High Scores</button>
+        <table popover id="popover">
+            <tr>
+                <th></th>
+                <th>Initals</th>
+                <th>Time Remaining (s)</th>
+            </tr>
+            <tr>
+                <td id="firstPlace">FIRST PLACE</td>
+                <td id="firstInitial"></td>
+                <td id="firstScore"></td>
+            </tr>
+            <tr>
+                <td id="secondPlace">SECOND PLACE</td>
+                <td id="secondInitial"></td>
+                <td id="secondScore"></td>
+            </tr>
+            <tr>
+                <td id="thirdPlace">THIRD PLACE</td>
+                <td id="thirdInitial"></td>
+                <td id="thirdScore"></td>
+            </tr>
+        </table>
+    </section>
+
+    <!-- Start Quiz -->
+    <section class="start">
+        <h1>Javascript Pop Quiz</h1>
+        <h3>Try to complete all the questions correctly within 60 seconds!</h3>
+        <h4>10 seconds will be subtracted for each wrong answer!</h4>
+        <button class="start" id="startBtn">Start Quiz!</button>
+    </section>
+
+    <!-- Scoreboard Input -->
+    <section id="score">
+        <form id="scoreData">
+            <label for="initials">Initials:</label>
+            <input type="text" id="initials" name="initials" value="">
+            <label for="time">Time Remaining:
+                <span id="timeText" name="timeText" value="">
+                </span> Seconds
+            </label>
+            <button type="submit" class="button" id="submitBtn" onclick="saveHighScore(event)">Save high score?</button>
+            <button type="reset" class="button" id="retryBtn">Try Again?</button>
+        </form>
+    </section>
+
+    <!-- Questions and Countdown Timer -->
+    <section class="container" id="quiz">
+        <div id="question"></div>
+        <div id="choices">
+            <button class="choice" id="A" onclick="checkAnswer('A')"></button>
+            <button class="choice" id="B" onclick="checkAnswer('B')"></button>
+            <button class="choice" id="C" onclick="checkAnswer('C')"></button>
+            <button class="choice" id="D" onclick="checkAnswer('D')"></button>
+        </div>
+        <div id="check"></div>
+        <div id="timer">
+            <div id="counter"></div>
+        </div>
+    </section>
+    <script src="./assets/script.js"></script>
 </body>
+
 </html>
