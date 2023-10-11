@@ -1,0 +1,145 @@
+/* Reset some default margin and padding to achieve consistent spacing */
+body, h1, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the entire body */
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Style the high scores container */
+#highScores {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style the high scores table */
+#highScores table {
+    width: 100%;
+}
+
+#highScores table th {
+    background-color: #f0f0f0;
+    padding: 10px;
+}
+
+#highScores table td {
+    padding: 10px;
+}
+
+/* Style the start section */
+.start {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Style the start button */
+.start button {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* Style the score section */
+#score {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Style the score input form */
+#scoreData {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#scoreData label {
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+#scoreData input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#scoreData .button {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+/* Style the quiz section */
+#quiz {
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Style the question and answer buttons */
+#quiz #question {
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+#quiz .choice {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px 0;
+    width: 1000px;
+}
+
+.choice {
+    background-color: #0074d9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 10px 0;
+}
+  
+  button.choice:hover {
+    background-color: #45a049; /* Darker green color on hover */
+  }
